@@ -1,4 +1,4 @@
-FROM --platform=linux/amd64 rust:1.73.0-bookworm
+FROM --platform=linux/amd64 rust:1.75.0-bookworm
 
 # for cbindgen
 RUN apt-get update && apt-get install --yes libclang-dev
