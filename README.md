@@ -1,4 +1,4 @@
-This repo contains prebuilt reproducible artifacts for the [Juicebox SDK](https://github.com/juicebox-systems/juicebox-sdk).
+This repo contains prebuilt reproducible artifacts for the [Juicebox SDK](https://github.com/phantom/juicebox-sdk).
 
 In general, it is only intended for use as a submodule of that repository located at the `./aritfacts` path.
 

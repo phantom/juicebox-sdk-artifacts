@@ -48,7 +48,9 @@ done
 # cd to repo root directory
 cd -P -- "$(dirname -- "$0")/.."
 
-docker pull juiceboxsystems/juicebox-sdk-artifacts
+# Build the Docker image locally
+echo "Building Docker image locally..."
+(cd artifacts && ./build_docker_image.sh)
 
 docker run --rm \
     --platform=linux/amd64 \
@@ -58,5 +60,5 @@ docker run --rm \
     -e FFI=${FFI} \
     -e JNI=${JNI} \
     -e VERBOSE=${VERBOSE} \
-    juiceboxsystems/juicebox-sdk-artifacts:latest \
+    juicebox-sdk-artifacts:latest \
     /sdk/artifacts/build_inner.sh
