@@ -10,6 +10,6 @@ RUN rustup target add aarch64-apple-ios x86_64-apple-ios aarch64-apple-ios-sim
 RUN rustup target add aarch64-linux-android armv7-linux-androideabi x86_64-linux-android i686-linux-android
 
 # NDK for android
-RUN wget https://dl.google.com/android/repository/android-ndk-r26b-linux.zip -O /android-ndk-r26b-linux.zip
-RUN unzip /android-ndk-r26b-linux.zip -d / && rm /android-ndk-r26b-linux.zip
-ENV ANDROID_NDK_HOME /android-ndk-r26b
+RUN wget https://dl.google.com/android/repository/android-ndk-r28c-linux.zip -O /android-ndk-r28c-linux.zip
+RUN unzip /android-ndk-r28c-linux.zip -d / && rm /android-ndk-r28c-linux.zip
+ENV ANDROID_NDK_HOME /android-ndk-r28c
